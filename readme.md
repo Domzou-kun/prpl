@@ -137,7 +137,7 @@ Because of the nature of parallel processing, prpl should not be used unnecessar
 ## Getting Started
 ### Installing
 
-### Latest prpl via PyPI (pip install)
+### Latest prpl via [PyPI](https://pypi.org/project/progress-parallel/) (pip install)
 ```
 pip install progress-parallel
 ```
@@ -170,6 +170,9 @@ If you have a suggestion for a technical solution, please write to the issue. We
 ## Authors
 
 Domzou
+
+## link
+[PyPI project link](https://pypi.org/project/progress-parallel/)
 
 ## LICENSE
 PyTorch has a MIT license, as found in the [LICENSE file](https://github.com/Domzou-kun/prpl/blob/main/LICENSE).
