@@ -4,6 +4,7 @@
 ![PyPI](https://img.shields.io/pypi/v/progress-parallel)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/progress-parallel)
 ![PyPI - License](https://img.shields.io/pypi/l/progress-parallel)
+[![Downloads](https://static.pepy.tech/badge/progress-parallel)](https://pepy.tech/project/progress-parallel)
 
 # prpl
 `prpl`(progress-parallel) is a library to visualize the progress of parallel processing by `concurrent.futures`, the standard python library.
