@@ -1,8 +1,12 @@
 ![prpl Logo](https://github.com/Domzou-kun/prpl/blob/main/docs/icon/prpl_header.png)
 
 
+![PyPI](https://img.shields.io/pypi/v/progress-parallel)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/progress-parallel)
+![PyPI - License](https://img.shields.io/pypi/l/progress-parallel)
+
 # prpl
-`prpl` is a library to visualize the progress of parallel processing by `concurrent.futures`, the standard python library.
+`prpl`(progress-parallel) is a library to visualize the progress of parallel processing by `concurrent.futures`, the standard python library.
 
 ---
 
@@ -135,7 +139,7 @@ Because of the nature of parallel processing, prpl should not be used unnecessar
 
 ### Latest prpl via PyPI (pip install)
 ```
-pip install prpl
+pip install progress-parallel
 ```
 
 ### Install by pip from github

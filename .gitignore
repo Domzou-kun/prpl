@@ -1,6 +1,8 @@
 # created by virtualenv automatically
 ### prpl ###
 
-prpl.egg-info
+*egg-info
 *__pycache__
+/dist
+/build
 

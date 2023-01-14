@@ -183,7 +183,7 @@ if __name__ == "__main__":
         [for] method progress time: 31.04
         ++++++++++++++++++++++++++++++++++
         """
-    if False:
+    if True:
         mode_test()
 
     if False:
