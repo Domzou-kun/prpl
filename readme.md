@@ -1,14 +1,13 @@
 ![prpl Logo](https://github.com/Domzou-kun/prpl/blob/main/docs/icon/prpl_header.png)
 
-<div style="text-align: center;">
+<div align="center">
 
-![PyPI](https://img.shields.io/pypi/v/progress-parallel)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/progress-parallel)
-![PyPI - License](https://img.shields.io/pypi/l/progress-parallel)
-[![Downloads](https://static.pepy.tech/badge/progress-parallel)](https://pepy.tech/project/progress-parallel)
-![GitHub issues](https://img.shields.io/github/issues/Domzou-kun/prpl)
-![GitHub followers](https://img.shields.io/github/followers/Domzou-kun?style=social)
-
+   <a href="">![PyPI](https://img.shields.io/pypi/v/progress-parallel)</a>
+   <a href="">![PyPI - Python Version](https://img.shields.io/pypi/pyversions/progress-parallel)</a>
+   <a href="">![PyPI - License](https://img.shields.io/pypi/l/progress-parallel)</a>
+   <a href="">[![Downloads](https://static.pepy.tech/badge/progress-parallel)](https://pepy.tech/project/progress-parallel)</a>
+   <a href="">![GitHub issues](https://img.shields.io/github/issues/Domzou-kun/prpl)</a>
+   <a href="">![GitHub followers](https://img.shields.io/github/followers/Domzou-kun?style=social)</a>
 
 </div>
 
