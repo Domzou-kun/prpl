@@ -7,7 +7,7 @@
 ![PyPI - License](https://img.shields.io/pypi/l/progress-parallel)
 [![Downloads](https://static.pepy.tech/badge/progress-parallel)](https://pepy.tech/project/progress-parallel)
 ![GitHub issues](https://img.shields.io/github/issues/Domzou-kun/prpl)
-[![GitHub followers](https://img.shields.io/github/followers/Naereen.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/Naereen?tab=followers)
+![GitHub followers](https://img.shields.io/github/followers/Domzou-kun?style=social)
 
 
 </div>
