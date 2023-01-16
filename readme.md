@@ -1,10 +1,17 @@
 ![prpl Logo](https://github.com/Domzou-kun/prpl/blob/main/docs/icon/prpl_header.png)
 
+<div style="text-align: center;">
 
 ![PyPI](https://img.shields.io/pypi/v/progress-parallel)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/progress-parallel)
 ![PyPI - License](https://img.shields.io/pypi/l/progress-parallel)
 [![Downloads](https://static.pepy.tech/badge/progress-parallel)](https://pepy.tech/project/progress-parallel)
+[![GitHub issues](https://badgen.net/github/issues/Naereen/Strapdown.js/)](https://GitHub.com/Naereen/StrapDown.js/issues/)
+[![GitHub followers](https://img.shields.io/github/followers/Naereen.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/Naereen?tab=followers)
+
+
+</div>
+
 
 # prpl
 `prpl`(progress-parallel) is a library to visualize the progress of parallel processing by `concurrent.futures`, the standard python library.
@@ -94,6 +101,50 @@ The actual operating gif of the comparison is as follows:
 It is important to note that if the formula is not complex, it is not suitable for parallel processing.
 Because of the nature of parallel processing, prpl should not be used unnecessarily.
 
+## Optional arguments, etc
+The list of arguments, etc. that can be used in `prpl` is as follows.
+```
+result_list = prpl(  # The results will always return with a type of List.
+   
+   target_function,  # Required Arguments
+      ### A function that contains a target formula, etc, and must include a return statement.
+   
+   target_list,      # Required Arguments
+      ### List to be used in the target function.
+   
+   list_sep,
+      ### Number of list divisions. 
+      ### Default setting is 5.
+
+   checkpoint,
+      ### Number of breaks to display progress.
+      ### ### Default setting is 10.
+   
+   title,
+      ### Title of each progress bar.
+      ### By default, the name of the target function.
+   
+   symbol,
+      ### Progress bar mark settings.
+   
+   symbol_c,
+      ### Setting the length of the progress bar.
+      ### Default setting is 50.
+   
+   smpl,
+      ### Simple display mode.
+      ### Default setting is False.
+   
+   timer,
+      ### Measuring run time.
+      ### Not available in simple mode.
+
+   color
+      ### Change the color of the progress bar.
+
+)
+```
+
 ---
 
 ## Impossible and warning with prpl
@@ -139,11 +190,14 @@ Because of the nature of parallel processing, prpl should not be used unnecessar
 ### Installing
 
 ### Latest prpl via [PyPI](https://pypi.org/project/progress-parallel/) (pip install)
+![PyPI](https://img.shields.io/pypi/v/progress-parallel)
+[![Downloads](https://static.pepy.tech/badge/progress-parallel/month)](https://pepy.tech/project/progress-parallel)
 ```
 pip install progress-parallel
 ```
 
 ### Install by pip from github
+
 ```
 pip install git+https://github.com/Domzou-kun/prpl.git
 ```
