@@ -9,7 +9,7 @@
    <a href="">[![Downloads](https://static.pepy.tech/badge/progress-parallel)](https://pepy.tech/project/progress-parallel)</a>
    <a href="">![GitHub issues](https://img.shields.io/github/issues/Domzou-kun/prpl)</a>
    <a href="">![GitHub followers](https://img.shields.io/github/followers/Domzou-kun?style=social)</a>
-   <a href="">![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FDomzou-kun%2Fprpl%2Fblob%2Fmain%2Freadme.md)</a>
+   <a href="">![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FDomzou-kun%2Fprpl)</a>
 
 </div>
 
