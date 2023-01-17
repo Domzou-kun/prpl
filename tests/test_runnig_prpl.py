@@ -21,6 +21,11 @@ from prpl import prpl
 def test_calc_func(i):
     return (i**i)**3
 
+""" For functions with multiple arguments. """
+def multi_arguments_target_function(a,b,g,h):
+    # The argument that receives the elements of the list is "a".
+    return a+b+h+g
+
 def timer_main():
     """ test list """
     t_list = list(range(0, 9564))
@@ -63,7 +68,7 @@ def mode_test():
         print("simple mode")
         res = prpl(target_list=t_list, target_function=test_calc_func, smpl=True)
         time.sleep(2)
-    if True:
+    if False:
         """ change progress symbol """
         """ prpl_run_3.gif """
         print("change progress symbol")
@@ -90,12 +95,22 @@ def mode_test():
         """ prpl_run_7.gif """
         res = prpl(target_list=t_list, target_function=test_calc_func, timer=True)
         time.sleep(2)
+    if True:
+        """ For functions with multiple arguments """
+        arg_dict = {
+            "g": 3,
+            "b": 2,
+            "h": 4
+        }
+        res = prpl(target_list=t_list, target_function=multi_arguments_target_function, args=arg_dict)
+        time.sleep(2)
     if False:
         """ and more arguments... """
         """ prpl_run_8.gif """
         res = prpl(
             target_list=t_list,             # target List
             target_function=test_calc_func, # target Function
+            args=None,                      # arguments of type dict
             list_sep=5,                     # number of list to split
             timer=True,                     # run timer
             smpl=True,                      # simple CUI
@@ -171,8 +186,6 @@ def and_more():
         res =  prpl(target_function, test_list, list_sep=1)
         time.sleep(2)
 
-
-
 if __name__ == "__main__":
     if False:
         timer_main()
@@ -191,5 +204,4 @@ if __name__ == "__main__":
 
     if False:
         and_more()
-    
 

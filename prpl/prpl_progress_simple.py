@@ -5,10 +5,14 @@
 import sys
 
 """ list progress """
-def list_progress_simple(target_list, func_sep, checkpoint, title, func, symbol, symbol_c, c)->list:
+def list_progress_simple(target_list, args, args_key, func_sep, checkpoint, title, func, symbol, symbol_c, c)->list:
     
     """ console setup """
     csi_line = func_sep+1
+    """ setup argument target list """
+    if args is not None:
+        args[args_key] = args[args_key][func_sep]
+        args_target_list = args[args_key]
 
     """ function running"""
     target_list_length = len(target_list)
@@ -17,8 +21,13 @@ def list_progress_simple(target_list, func_sep, checkpoint, title, func, symbol,
     progress_color = f"\033[{c}m"
     color_end = "\033[0m"
     while(progress_counter!=target_list_length):
-        return_result_list.append(func(target_list[progress_counter]))
         
+        if args is None:
+            return_result_list.append(func(target_list[progress_counter]))
+        else:   # If the argument exists.
+            args[args_key] = args_target_list[progress_counter]
+            return_result_list.append(func(**args))    
+
         if (progress_counter%checkpoint)==0:
             sys.stdout.write(f"\033[{csi_line}B\033[2K")
             

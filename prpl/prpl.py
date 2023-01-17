@@ -7,11 +7,12 @@ import time
 import shutil
 from concurrent.futures import ProcessPoolExecutor
 from itertools import chain
+from inspect import signature
 
 from .prpl_progress_simple import list_progress_simple
 from .prpl_progress import list_progress
 
-def prpl(target_function=None, target_list: list=None, list_sep=5, checkpoint: int = 10, title: str="", symbol=None, symbol_c: int = 50, smpl=False, timer=False, color: str="white")->list:
+def prpl(target_function=None, target_list: list=None, args: dict=None, list_sep=5, checkpoint: int = 10, title: str="", symbol=None, symbol_c: int = 50, smpl=False, timer=False, color: str="white")->list:
     
     """ Terminal line size """
     terminal_line_size = shutil.get_terminal_size().lines
@@ -27,6 +28,15 @@ def prpl(target_function=None, target_list: list=None, list_sep=5, checkpoint: i
     if (symbol!="mew")and(symbol is not None):
         if len(symbol)!=1:
             symbol=symbol[0]
+    """ check arguments dict """
+    if args is not None:
+        target_function_arguments_list = list(signature(target_function).parameters.keys())
+        target_new_argument_key = list(set(args.keys())^set(target_function_arguments_list))
+        argument_key = target_new_argument_key[0]
+        args[argument_key] = sep_list
+    else:
+        argument_key = None
+
     """ color number """
     color_number = {
         "black": 30,
@@ -62,9 +72,9 @@ def prpl(target_function=None, target_list: list=None, list_sep=5, checkpoint: i
         for index, arg_list in enumerate(sep_list):
             thread_title = title+f"in thread:{index+1} "
             if smpl is True:
-                target_future = pool.submit(list_progress_simple, target_list=arg_list, func_sep=index, checkpoint=checkpoint, title=thread_title, func=target_function, symbol=symbol, symbol_c=symbol_c, c=c_num)
+                target_future = pool.submit(list_progress_simple, target_list=arg_list, args=args, args_key=argument_key, func_sep=index, checkpoint=checkpoint, title=thread_title, func=target_function, symbol=symbol, symbol_c=symbol_c, c=c_num)
             else:
-                target_future = pool.submit(list_progress, target_list=arg_list, func_sep=index, checkpoint=checkpoint, title=thread_title, func=target_function, symbol=symbol, symbol_c=symbol_c, c=c_num)
+                target_future = pool.submit(list_progress, target_list=arg_list, args=args, args_key=argument_key, func_sep=index, checkpoint=checkpoint, title=thread_title, func=target_function, symbol=symbol, symbol_c=symbol_c, c=c_num)
             thread_futures.append(target_future)
     
     """ return result list """
