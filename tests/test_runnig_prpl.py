@@ -97,12 +97,12 @@ def mode_test():
         time.sleep(2)
     if True:
         """ For functions with multiple arguments """
-        arg_dict = {
+        args_dict = {
             "g": 3,
             "b": 2,
             "h": 4
         }
-        res = prpl(target_list=t_list, target_function=multi_arguments_target_function, args=arg_dict)
+        res = prpl(target_list=t_list, target_function=multi_arguments_target_function, args=args_dict)
         time.sleep(2)
     if False:
         """ and more arguments... """

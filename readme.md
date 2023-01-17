@@ -32,31 +32,52 @@ The progress of the parallel processing can be visualized and the parallel proce
 
 Standard features include the following,
  - Display of thread progress
-    ```Python
-    res = prpl(target_list=t_list, target_function=test_calc_func)
-    ```
-    ![prpl test gif 1](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_1.gif)
+   ```Python
+   res = prpl(target_list=t_list, target_function=test_calc_func)
+   ```
+   ![prpl test gif 1](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_1.gif)
+
  - Display of progress bar
-    ```Python
-    res = prpl(target_list=t_list, target_function=test_calc_func, symbol="#", smpl=True)
-    ```
-    ![prpl test gif 4](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_4.gif)
+   ```Python
+   res = prpl(target_list=t_list, target_function=test_calc_func, symbol="#", smpl=True)
+   ```
+   ![prpl test gif 4](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_4.gif)
+
  - Measure run timer
-    ```Python
-    res = prpl(target_list=t_list, target_function=test_calc_func, timer=True)
-    ```
-    ![prpl test gif 7](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_7.gif)
+   ```Python
+   res = prpl(target_list=t_list, target_function=test_calc_func, timer=True)
+   ```
+   ![prpl test gif 7](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_7.gif)
+
  - Change the color of the progress bar.
-    ```Python
-    res = prpl(target_list=t_list, target_function=test_calc_func, symbol="#", color="green")
-    ```
-    ![prpl test gif 6](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_6.gif)
+   ```Python
+   res = prpl(target_list=t_list, target_function=test_calc_func, symbol="#", color="green")
+   ```
+   ![prpl test gif 6](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_6.gif)
 
  - Only single progress bar is available.
-    ```Python
-    res = prpl(target_list=t_list, target_function=test_calc_func, list_sep=1)
-    ```
-    ![prpl test gif](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_readme_sample_2.gif)
+   ```Python
+   res = prpl(target_list=t_list, target_function=test_calc_func, list_sep=1)
+   ```
+   ![prpl test gif](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_readme_sample_2.gif)
+
+ - When multiple arguments are passed to a function.
+   ```Python
+   """ For functions with multiple arguments. """
+   def multi_arguments_target_function(a,b,c,d):
+      # The argument that receives the elements of the list is "a".
+      return a+b+c+d
+   ```
+   ```Python
+   args_dict = {
+      "b": 2,
+      "c": 3,
+      "d": 4
+   }
+   res = prpl(target_list=t_list, target_function=multi_arguments_target_function, args=args_dict)
+   ```
+   When passing multiple arguments to a function, be sure to pass them as type of `dict`.
+   Also, it is not necessary to include the target list in the arguments grouped together in that type of `dict`.
 
 For other samples, test code is available at [tests directory](https://github.com/Domzou-kun/prpl/tree/main/tests). Please run it.
 
@@ -112,6 +133,9 @@ result_list = prpl(  # The results will always return with a type of List.
    
    target_list,      # Required Arguments
       ### List to be used in the target function.
+
+   args,
+      ### Multiple arguments managed by dictionary type.
    
    list_sep,
       ### Number of list divisions. 
