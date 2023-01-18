@@ -6,7 +6,7 @@
    <a href="">![PyPI - Python Version](https://img.shields.io/pypi/pyversions/progress-parallel)</a>
    <a href="">![PyPI - Format](https://img.shields.io/pypi/format/progress-parallel)</a>
    <a href="">![PyPI - License](https://img.shields.io/pypi/l/progress-parallel)</a>
-   <a href="">[![Downloads](https://static.pepy.tech/badge/progress-parallel)](https://pepy.tech/project/progress-parallel)</a>
+   <a href="">[![Downloads](https://static.pepy.tech/personalized-badge/progress-parallel?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Downloads)](https://pepy.tech/project/progress-parallel)</a>
    <a href="">![GitHub issues](https://img.shields.io/github/issues/Domzou-kun/prpl)</a>
    <a href="">![GitHub followers](https://img.shields.io/github/followers/Domzou-kun?style=social)</a>
    <a href="">![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FDomzou-kun%2Fprpl)</a>
