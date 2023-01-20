@@ -13,7 +13,26 @@
 
 </div>
 
+<div align="center">
 
+   <span style="font-size: 150%;">the latest version of </span>
+   <b><span style="font-size: 200%;">3.0.1🎉</span></b>
+
+   <b><span style="font-size: 170%;">Changes in the new version of 3.0.1</span></b>
+
+   <div style="font-size: 130%; line-height: 14pt; text-align: center;">
+      <div style="display: inline-block; text-align: left;">
+      - Support for the for-loop<br>
+      - Change arguments order<br>
+      - Fix readme<br>
+      </div>
+   </div>
+
+<br>
+<br>
+</div>
+
+---
 # prpl
 `prpl`(progress-parallel) is a library to visualize the progress of parallel processing by `concurrent.futures`, the standard python library.
 
@@ -59,7 +78,22 @@ Standard features include the following,
    ```Python
    res = prpl(target_list=t_list, target_function=test_calc_func, list_sep=1)
    ```
-   ![prpl test gif](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_readme_sample_2.gif)
+   ![prpl test gif sample 2](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_readme_sample_2.gif)
+
+ - For use with the for-loop.
+   ```Python
+   for _ in prpl(t_list, symbol="#"):
+      pass
+   ```
+   ![prpl test gif 9](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_9.gif)
+
+   When used in a for-loop, the color of the symbol can also be changed.However, this feature does not allow for graphical functions with arrows, such as multi-threading (parallel processing) mode. If the symbol argument is not used, a standard count-up progress bar is used.
+   ```Python
+   for _ in prpl(t_list):
+      pass
+   ```
+   ![prpl test gif 10](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_10.gif)
+
 
  - When multiple arguments are passed to a function.
    ```Python
@@ -114,7 +148,7 @@ def target_function(target_var):
 """ Methods using prpl """
 from prpl import prpl
 target_list = list(range(0, 100000))
-calculation_result = prpl(target_function, target_list) # prpl
+calculation_result = prpl(target_list, target_function) # prpl
 ```
 The actual operating gif of the comparison is as follows: 
 
@@ -128,11 +162,13 @@ The list of arguments, etc. that can be used in `prpl` is as follows.
 ```
 result_list = prpl(  # The results will always return with a type of List.
    
-   target_function,  # Required Arguments
-      ### A function that contains a target formula, etc, and must include a return statement.
-   
-   target_list,      # Required Arguments
+   target_list,      # Required argument
       ### List to be used in the target function.
+
+   target_function,  # May be required argument.
+      ### A function that contains a target formula, etc, and must include a return statement.
+      ### Required arguments if prpl is used in parallel processing visualization.
+      ### It is not required if it is used in the for-loop.
 
    args,
       ### Multiple arguments managed by dictionary type.
@@ -253,6 +289,9 @@ Domzou
 
 ## link
 [PyPI project link](https://pypi.org/project/progress-parallel/)
+
+## Version history
+If you want to know about past versions, please refer to [version_history](https://github.com/Domzou-kun/prpl/blob/main/docs/version_history.txt).
 
 ## LICENSE
 PyTorch has a MIT license, as found in the [LICENSE file](https://github.com/Domzou-kun/prpl/blob/main/LICENSE).

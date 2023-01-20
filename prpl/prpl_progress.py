@@ -1,5 +1,4 @@
 # progress parallel for python
-# simple mode
 # copyright by Domzou
 
 import sys

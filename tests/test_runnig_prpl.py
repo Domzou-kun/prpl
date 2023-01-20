@@ -85,7 +85,7 @@ def mode_test():
         print("change max thread")
         res = prpl(target_list=t_list, target_function=test_calc_func, list_sep=8)
         time.sleep(2)
-    if True:
+    if False:
         """ change progress symbol color """
         """ prpl_run_6.gif """
         res = prpl(target_list=t_list, target_function=test_calc_func, symbol="#", color="green")
@@ -95,7 +95,7 @@ def mode_test():
         """ prpl_run_7.gif """
         res = prpl(target_list=t_list, target_function=test_calc_func, timer=True)
         time.sleep(2)
-    if True:
+    if False:
         """ For functions with multiple arguments """
         args_dict = {
             "g": 3,
@@ -103,6 +103,24 @@ def mode_test():
             "h": 4
         }
         res = prpl(target_list=t_list, target_function=multi_arguments_target_function, args=args_dict)
+        time.sleep(2)
+    if False:
+        """ When used only for simple the for-loop statements. """
+        """ prpl_run_9.gif """
+        test_list_1 = list(range(0, 2500000))
+        print("Start \"the for-loop\"...")
+        for _ in prpl(test_list_1, symbol="#"):
+            pass
+        print("End \"the for-loop\"...")
+        time.sleep(2)
+    if False:
+        """ When used only for simple the for-loop statements. (count-up) """
+        """ prpl_run_10.gif """
+        test_list_1 = list(range(0, 2500000))
+        print("Start \"the for-loop\"...")
+        for _ in prpl(test_list_1):
+            pass
+        print("End \"the for-loop\"...")
         time.sleep(2)
     if False:
         """ and more arguments... """
@@ -162,7 +180,7 @@ def readme_sample():
     print("\n prpl method \n")
     prpl_start = time.perf_counter()
     target_list = list(range(0, 10000))
-    calculation_result = prpl(target_function, target_list) # prpl
+    calculation_result = prpl(target_list, target_function) # prpl
     prpl_end = time.perf_counter()
 
     print("[conventional methon]: {:.2f}sec".format(conv_end-conv_start))
@@ -177,13 +195,13 @@ def and_more():
         """ np.arrray is also available, but The type that returns as a result is the list type.  """
         import numpy as np
         test_np_array = np.array(list(range(0, 10000)))
-        res = prpl(target_function, test_np_array)
+        res = prpl(test_np_array, target_function)
         time.sleep(2)
 
     if False:
-        """ Only one progress bar is available """
+        """ Only one progress bar is available. """
         test_list = list(range(0, 5000))
-        res =  prpl(target_function, test_list, list_sep=1)
+        res =  prpl(test_list, target_function, list_sep=1)
         time.sleep(2)
 
 if __name__ == "__main__":
@@ -196,7 +214,7 @@ if __name__ == "__main__":
         [for] method progress time: 31.04
         ++++++++++++++++++++++++++++++++++
         """
-    if True:
+    if False:
         mode_test()
 
     if False:

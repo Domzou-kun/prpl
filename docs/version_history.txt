@@ -1,0 +1,43 @@
+<<===  Version History  ===>>
+Author: Domzou
+Update: 2023-01-21
+
+
+---
+
+version: 3.0.1
+release: 2023-01-21
+
+- Support for the for-loop
+- Change arguments order
+- Fix readme
+
+---
+
+version: 2.0.2
+release: 2023-01-18
+
+ - Fix PyPI classifier
+ - Fix readme
+
+---
+
+version: 2.0.1
+release: 2023-01-17
+
+ - Multiple arguments are supported
+ - Fix readme
+
+--- 
+
+version: 1.0.2
+release: 2023-01-14
+
+ - first release version
+
+---
+
+version: 1.0.1
+release: null
+
+ - develop version
