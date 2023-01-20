@@ -20,11 +20,11 @@
 
    <b><span style="font-size: 170%;">Changes in the new version of 3.0.1</span></b>
 
-   <div style="font-size: 130%; line-height: 14pt; text-align: center;">
+   <div style="font-size: 130%; line-height: 9pt; text-align: center;">
       <div style="display: inline-block; text-align: left;">
-      - Support for the for-loop<br>
-      - Change arguments order<br>
-      - Fix readme<br>
+         <p>- Support for the for-loop -<br></p>
+         <p>- Change arguments order -<br></p>
+         <p>- Fix readme -<br></p>
       </div>
    </div>
 
