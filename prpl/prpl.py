@@ -13,7 +13,7 @@ from .prpl_progress_simple import list_progress_simple
 from .prpl_progress import list_progress
 from .prpl_forl_loop_progress import list_for_loop_progress
 
-def prpl(target_list: list = None, target_function=None, args: dict = None, list_sep: int = 5, checkpoint: int = 10, title: str="", symbol: str = None, symbol_c: int = 50, smpl: bool = False, timer: bool = False, color: str = "white")->list:
+def prpl(target_list: list = None, target_function = None, args: dict = None, list_sep: int = 5, checkpoint: int = 10, title: str = "", symbol: str = None, symbol_c: int = 50, smpl: bool = False, timer: bool = False, color: str = "white") -> list:
     
     """ progress color number """
     color_number = {
@@ -31,7 +31,7 @@ def prpl(target_list: list = None, target_function=None, args: dict = None, list
     else:
         c_num = 37  # white
     """ Thread progress title """
-    if len(title)!=0:
+    if len(title) != 0:
         title = title+"  "
     else:
         if target_function is not None:
@@ -39,13 +39,13 @@ def prpl(target_list: list = None, target_function=None, args: dict = None, list
         else:
             title = "State of progress"
     """ check symbol length """
-    if (symbol!="mew")and(symbol is not None):
-        if len(symbol)!=1:
-            symbol=symbol[0]
+    if (symbol != "mew") and (symbol is not None):
+        if len(symbol) != 1:
+            symbol = symbol[0]
 
     """ Using python's for loop statement alone """
     if target_function is None:
-        return list_for_loop_progress(target_list=target_list, checkpoint=checkpoint, title=title, symbol=symbol, symbol_c=symbol_c, c=c_num)
+        return list_for_loop_progress(target_list = target_list, checkpoint = checkpoint, title = title, symbol = symbol, symbol_c = symbol_c, c = c_num)
 
     """ Terminal line size """
     terminal_line_size = shutil.get_terminal_size().lines
@@ -53,10 +53,10 @@ def prpl(target_list: list = None, target_function=None, args: dict = None, list
     """ List separate """
     target_list_length = len(target_list)
     sep_num = int(target_list_length/list_sep)
-    sep_list = [ target_list[sep_:sep_+sep_num] for sep_ in range(0, target_list_length, sep_num) ]   # split list along variable list_sep
+    sep_list = [ target_list[sep_:sep_ + sep_num] for sep_ in range(0, target_list_length, sep_num) ]   # split list along variable list_sep
     """ check variable list_sep """
-    if len(sep_list)!=list_sep:
-        list_sep=len(sep_list)
+    if len(sep_list) != list_sep:
+        list_sep = len(sep_list)
     """ check arguments dict """
     if args is not None:
         target_function_arguments_list = list(signature(target_function).parameters.keys())
@@ -79,9 +79,9 @@ def prpl(target_list: list = None, target_function=None, args: dict = None, list
         for index, arg_list in enumerate(sep_list):
             thread_title = title+f"in thread:{index+1} "
             if smpl is True:
-                target_future = pool.submit(list_progress_simple, target_list=arg_list, args=args, args_key=argument_key, func_sep=index, checkpoint=checkpoint, title=thread_title, func=target_function, symbol=symbol, symbol_c=symbol_c, c=c_num)
+                target_future = pool.submit(list_progress_simple, target_list = arg_list, args = args, args_key = argument_key, func_sep = index, checkpoint = checkpoint, title = thread_title, func = target_function, symbol = symbol, symbol_c = symbol_c, c = c_num)
             else:
-                target_future = pool.submit(list_progress, target_list=arg_list, args=args, args_key=argument_key, func_sep=index, checkpoint=checkpoint, title=thread_title, func=target_function, symbol=symbol, symbol_c=symbol_c, c=c_num)
+                target_future = pool.submit(list_progress, target_list = arg_list, args = args, args_key = argument_key, func_sep = index, checkpoint = checkpoint, title = thread_title, func = target_function, symbol = symbol, symbol_c = symbol_c, c = c_num)
             thread_futures.append(target_future)
     
     """ return result list """
@@ -99,7 +99,7 @@ def prpl(target_list: list = None, target_function=None, args: dict = None, list
 
         if timer is True:
             timer_msg = "├─Thread processing time: " + "{:.3f}".format((_end-_start)) + "\n"
-            complete_msg=timer_msg+complete_msg
+            complete_msg = timer_msg + complete_msg
         print(f"\033[{(list_sep+1)*2}B" +  "│\n" + complete_msg)
     
     return _result

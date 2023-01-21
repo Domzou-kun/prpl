@@ -2,6 +2,14 @@
 Author: Domzou
 Update: 2023-01-21
 
+---
+
+version: 3.1.1
+release: 2023-01-21
+
+- hotfix the for-loop function
+- Some test files were removed
+- Fix readme
 
 ---
 
