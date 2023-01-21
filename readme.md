@@ -32,7 +32,7 @@
    <b><span style="font-size: 170%;">CAUTION</span></b> 
    <div style="font-size: 130%; line-height: 9pt; text-align: center;">
       <div style="display: inline-block; text-align: left;">
-         <p>- We have discovered a serious flaw in the functionality available in for-loop added in v3.0.1. This has been corrected in v3.1.1. v3.0.1 has been removed from PyPI. -<br></p>
+         <b><p>- We have discovered a serious flaw in the functionality available in for-loop added in v3.0.1. -<br>- This has been corrected in v3.1.1. v3.0.1 has been removed from PyPI. -<br></p></b>
       </div>
    </div>
 
