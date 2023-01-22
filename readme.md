@@ -291,10 +291,11 @@ If you have a suggestion for a technical solution, please write to the issue. We
 Domzou
 
 ## link
-The link to PyPI is here.  
-[PyPI project link](https://pypi.org/project/progress-parallel/)  
-このreadmeを日本語にしたものになります。本readmeの重要な部分をメインに日本語に直して[Qiita](https://qiita.com/Domzou/items/03d39dd1cdce46719c94)に投稿しています。  
-[Pythonでmultiprocessingを簡単に可視化してくれるライブラリを作ってみた](https://qiita.com/Domzou/items/03d39dd1cdce46719c94)
+ - The link to PyPI is here.  
+    - [PyPI project link](https://pypi.org/project/progress-parallel/)  
+
+ - このreadmeを日本語にしたものになります。本readmeの重要な部分をメインに日本語に直して[Qiita](https://qiita.com/Domzou/items/03d39dd1cdce46719c94)に投稿しています。  
+    - [Pythonでmultiprocessingを簡単に可視化してくれるライブラリを作ってみた](https://qiita.com/Domzou/items/03d39dd1cdce46719c94)
 
 ## Version history
 If you want to know about past versions, please refer to [version history](https://github.com/Domzou-kun/prpl/blob/main/docs/version_history.txt).
