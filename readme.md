@@ -8,6 +8,7 @@
    <a href="">![PyPI - License](https://img.shields.io/pypi/l/progress-parallel)</a>
    <a href="">[![Downloads](https://static.pepy.tech/personalized-badge/progress-parallel?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Downloads)](https://pepy.tech/project/progress-parallel)</a>
    <a href="">![GitHub issues](https://img.shields.io/github/issues/Domzou-kun/prpl)</a>
+   <br>
    <a href="">![GitHub followers](https://img.shields.io/github/followers/Domzou-kun?style=social)</a>
    <a href="">[![Twitter](https://badgen.net/badge/icon/tweet?icon=twitter&label)](https://twitter.com/intent/tweet?text="prpl"%20is%20a%20recommended%20repository😊👍%0a&url=https://github.com/Domzou-kun/prpl&hashtags=Github,Python)
 </a>
