@@ -9,7 +9,8 @@
    <a href="">[![Downloads](https://static.pepy.tech/personalized-badge/progress-parallel?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Downloads)](https://pepy.tech/project/progress-parallel)</a>
    <a href="">![GitHub issues](https://img.shields.io/github/issues/Domzou-kun/prpl)</a>
    <a href="">![GitHub followers](https://img.shields.io/github/followers/Domzou-kun?style=social)</a>
-   <a href="">![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FDomzou-kun%2Fprpl)</a>
+   <a href="">[![Twitter](https://badgen.net/badge/icon/tweet?icon=twitter&label)](https://twitter.com/intent/tweet?text="prpl"%20is%20a%20recommended%20repository😊👍%0a&url=https://github.com/Domzou-kun/prpl&hashtags=Github,Python)
+</a>
 
 </div>
 
@@ -62,45 +63,45 @@ Standard features include the following,
    ```Python
    res = prpl(target_list=t_list, target_function=test_calc_func)
    ```
-   ![prpl test gif 1](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_1.gif)
+   ![prpl test gif 1](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_1.gif?raw=true)
 
  - Display of progress bar
    ```Python
    res = prpl(target_list=t_list, target_function=test_calc_func, symbol="#", smpl=True)
    ```
-   ![prpl test gif 4](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_4.gif)
+   ![prpl test gif 4](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_4.gif?raw=true)
 
  - Measure run timer
    ```Python
    res = prpl(target_list=t_list, target_function=test_calc_func, timer=True)
    ```
-   ![prpl test gif 7](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_7.gif)
+   ![prpl test gif 7](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_7.gif?raw=true)
 
  - Change the color of the progress bar.
    ```Python
    res = prpl(target_list=t_list, target_function=test_calc_func, symbol="#", color="green")
    ```
-   ![prpl test gif 6](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_6.gif)
+   ![prpl test gif 6](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_6.gif?raw=true)
 
  - Only single progress bar is available.
    ```Python
    res = prpl(target_list=t_list, target_function=test_calc_func, list_sep=1)
    ```
-   ![prpl test gif sample 2](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_readme_sample_2.gif)
+   ![prpl test gif sample 2](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_readme_sample_2.gif?raw=true)
 
  - For use with the for-loop.
    ```Python
    for _ in prpl(t_list, symbol="#"):
       pass
    ```
-   ![prpl test gif 9](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_9.gif)
+   ![prpl test gif 9](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_9.gif?raw=true)
 
    When used in a for-loop, the color of the symbol can also be changed.However, this feature does not allow for graphical functions with arrows, such as multi-threading (parallel processing) mode. If the symbol argument is not used, a standard count-up progress bar is used.
    ```Python
    for _ in prpl(t_list):
       pass
    ```
-   ![prpl test gif 10](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_10.gif)
+   ![prpl test gif 10](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_run_10.gif?raw=true)
 
 
  - When multiple arguments are passed to a function.
@@ -160,7 +161,7 @@ calculation_result = prpl(target_list, target_function) # prpl
 ```
 The actual operating gif of the comparison is as follows: 
 
-![prpl test gif 1](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_readme_sample_1.gif)
+![prpl test gif 1](https://github.com/Domzou-kun/prpl/blob/main/docs/example_gif/prpl_readme_sample_1.gif?raw=true)
 
 It is important to note that if the formula is not complex, it is not suitable for parallel processing.
 Because of the nature of parallel processing, prpl should not be used unnecessarily.
