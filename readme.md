@@ -1,4 +1,4 @@
-![prpl Logo](https://github.com/Domzou-kun/prpl/blob/main/docs/icon/prpl_header.png)
+![prpl Logo](https://github.com/Domzou-kun/prpl/blob/main/docs/icon/prpl_header.png?raw=true)
 
 <div align="center">
 
