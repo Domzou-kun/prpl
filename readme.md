@@ -16,30 +16,22 @@
 </div>
 
 <div align="center">
-
-   <span style="font-size: 150%;">the latest version of </span>
-   <b><span style="font-size: 200%;">3.1.1🎉</span></b>
-
-   <b><span style="font-size: 170%;">Changes in the new version of 3.1.1</span></b>
-
-   <div style="font-size: 130%; line-height: 9pt; text-align: center;">
-      <div style="display: inline-block; text-align: left;">
-         <p>- hotfix the for-loop function -<br></p>
-         <p>- Fix readme -<br></p>
-      </div>
-   </div>
-
+   <br>
+   
+   # **the latest version of 3.1.1🎉**
+   ## Changes in the new version of **3.1.1**
+   **- hotfix the for-loop function -**  
+   **- Fix readme -**
+   
+   <br>
    <br>
 
-   <b><span style="font-size: 170%;">CAUTION</span></b> 
-   <div style="font-size: 130%; line-height: 9pt; text-align: center;">
-      <div style="display: inline-block; text-align: left;">
-         <b><p>- We have discovered a serious flaw in the functionality available in for-loop added in v3.0.1. -<br>- This has been corrected in v3.1.1. v3.0.1 has been removed from PyPI. -<br></p></b>
-      </div>
-   </div>
-
-<br>
-<br>
+   # CAUTION
+   **We have discovered a serious flaw in the functionality available in for-loop added in v3.0.1.  
+   This has been corrected in v3.1.1.  
+   v3.0.1 has been removed from PyPI.**
+   <br>
+   <br>
 </div>
 
 ---
