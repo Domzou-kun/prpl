@@ -18,18 +18,19 @@
 <div align="center">
    <br>
    
-   # **the latest version of 3.1.1🎉**
-   ## Changes in the new version of **3.1.1**
-   **- hotfix the for-loop function -**  
-   **- Fix readme -**
+   # **the latest version of 3.1.2🎉**
+   ## Changes in the new version of **3.1.2**
+   **- Minor modifications to some programs -**  
+   **- Add external link to Japanese readme in readme.md -**
    
    <br>
    <br>
 
    # CAUTION
-   **We have discovered a serious flaw in the functionality available in for-loop added in v3.0.1.  
+   **Serious bugs are fixed as hotfixes in v3.1.1.  
+   We have discovered a serious flaw in the functionality available in for-loop added in v3.0.1.  
    This has been corrected in v3.1.1.  
-   v3.0.1 has been removed from PyPI.**
+   Accordingly, v3.0.1 has been removed from PyPI.**
    <br>
    <br>
 </div>
@@ -290,10 +291,13 @@ If you have a suggestion for a technical solution, please write to the issue. We
 Domzou
 
 ## link
-[PyPI project link](https://pypi.org/project/progress-parallel/)
+The link to PyPI is here.  
+[PyPI project link](https://pypi.org/project/progress-parallel/)  
+このreadmeを日本語にしたものになります。本readmeの重要な部分をメインに日本語に直して[Qiita](https://qiita.com/Domzou/items/03d39dd1cdce46719c94)に投稿しています。  
+[Pythonでmultiprocessingを簡単に可視化してくれるライブラリを作ってみた](https://qiita.com/Domzou/items/03d39dd1cdce46719c94)
 
 ## Version history
-If you want to know about past versions, please refer to [version_history](https://github.com/Domzou-kun/prpl/blob/main/docs/version_history.txt).
+If you want to know about past versions, please refer to [version history](https://github.com/Domzou-kun/prpl/blob/main/docs/version_history.txt).
 
 ## LICENSE
 PyTorch has a MIT license, as found in the [LICENSE file](https://github.com/Domzou-kun/prpl/blob/main/LICENSE).

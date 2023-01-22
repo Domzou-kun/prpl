@@ -1,6 +1,14 @@
 <<===  Version History  ===>>
 Author: Domzou
-Update: 2023-01-21
+Update: 2023-01-22
+
+---
+
+version: 3.1.2
+release: 2023-01-22
+
+- Minor modifications to some programs
+- Add external link to Japanese readme in readme.md
 
 ---
 
@@ -49,3 +57,5 @@ version: 1.0.1
 release: null
 
  - develop version
+
+---

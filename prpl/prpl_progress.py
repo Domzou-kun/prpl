@@ -8,7 +8,7 @@ def list_progress(target_list, args, args_key, func_sep, checkpoint, title, func
     
     """ CSI console setup """
     csi_line = (func_sep + 1)*2
-    title = "├─"+title
+    title = "├─" + title
     """ moe mode """
     if symbol == "mew":
         symbol_moe = "~~(  =^･ω･^=)"

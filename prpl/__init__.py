@@ -1,7 +1,7 @@
 from .prpl import *
 from .prpl_progress import *
 from .prpl_progress_simple import *
-from .prpl_forl_loop_progress import *
+from .prpl_for_loop_progress import *
 
 import os
 import ctypes

@@ -1,3 +1,7 @@
+# progress parallel for python
+# the for-loop mode
+# copyright by DomZou
+
 import sys
 
 
