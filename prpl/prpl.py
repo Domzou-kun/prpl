@@ -52,7 +52,10 @@ def prpl(target_list: list = None, target_function = None, args: dict = None, li
     print("\n"*terminal_line_size + f"\033[{terminal_line_size}A")  # scroll line
     """ List separate """
     target_list_length = len(target_list)
-    sep_num = int(target_list_length / list_sep)
+    if target_list_length >= list_sep:
+        sep_num = int(target_list_length / list_sep)
+    else:
+        sep_num = 1
     sep_list = [ target_list[sep_ : sep_ + sep_num] for sep_ in range(0, target_list_length, sep_num) ]   # split list along variable list_sep
     """ check variable list_sep """
     if len(sep_list) != list_sep:

@@ -18,10 +18,9 @@
 <div align="center">
    <br>
    
-   # **the latest version of 3.1.2🎉**
-   ## Changes in the new version of **3.1.2**
-   **- Minor modifications to some programs -**  
-   **- Add external link to Japanese readme in readme.md -**
+   # **the latest version of 3.2.1🎉**
+   ## Changes in the new version of **3.2.1**
+   **- Some serious bugs were fixed. -**  
    
    <br>
    <br>

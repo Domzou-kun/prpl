@@ -1,6 +1,13 @@
 <<===  Version History  ===>>
 Author: Domzou
-Update: 2023-01-22
+Update: 2023-07-13
+
+---
+
+version: 3.2.1
+release: 2023-07-13
+
+- Some serious bugs were fixed
 
 ---
 
