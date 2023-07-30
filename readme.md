@@ -300,7 +300,7 @@ Domzou
 If you want to know about past versions, please refer to [version history](https://github.com/Domzou-kun/prpl/blob/main/docs/version_history.txt).
 
 ## LICENSE
-PyTorch has a MIT license, as found in the [LICENSE file](https://github.com/Domzou-kun/prpl/blob/main/LICENSE).
+prpl has a MIT license, as found in the [LICENSE file](https://github.com/Domzou-kun/prpl/blob/main/LICENSE).
 
 
 

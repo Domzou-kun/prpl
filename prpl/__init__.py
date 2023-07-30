@@ -7,7 +7,7 @@ import os
 import ctypes
 
 """ code version """
-__version__ = "0.1.1"
+__version__ = "3.2.1"
 
 """ Enable escape sequence in cmd """
 # WARNING
